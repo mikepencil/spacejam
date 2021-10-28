@@ -17,13 +17,13 @@ def generate_image(background, planet1, file_name):
     from random import randint
     seed()
     for _ in range(1):
-	    value1 = randint(0,1000)
+	Xcoord = randint(0,1000)
     for _ in range(1):
-        value2 = randint(0,1000)
+        Ycoord = randint(0,1000)
     for _ in range(1):
         size1 = randint(0,200)
     
-    coordinates = (value1, value2)
+    coordinates = (Xcoord, Ycoord)
     background_file = path.join("/Users/tylercreighton/Desktop/spacejam/background", f"{background}.png")
     background_image = Image.open(background_file)
     
